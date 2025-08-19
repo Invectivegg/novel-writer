@@ -945,12 +945,11 @@
         function loadData() {
             try {
                 const data = JSON.parse(window.localStorage.getItem('novelWriterData') || '{}');
-        '{}');
                 characters = data.characters || {};
                 plotPoints = data.plotPoints || {};
                 chapterData = data.chapterData || {};
                 annotations = data.annotations || {};
-     } catch (e) {
+            } catch (e) {
                 console.error('Failed to load data:', e);
                 characters = {};
                 plotPoints = {};
