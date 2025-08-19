@@ -944,7 +944,7 @@
 
         function loadData() {
             try {
-                const data = JSON.parse(window.localStorage.getItem('novelWriterData') || '
+                const data = JSON.parse(window.localStorage.getItem('novelWriterData') || '{}');
         '{}');
                 characters = data.characters || {};
                 plotPoints = data.plotPoints || {};
